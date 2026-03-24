@@ -1,0 +1,52 @@
+name: Validate Prompts
+
+on:
+  pull_request:
+    paths:
+      - 'prompts/**'
+      - 'templates/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: |
+            prompts/**/*.md
+            templates/**/*.md
+
+      - name: Check prompt structure
+        run: |
+          echo "Validating prompt file structure..."
+          errors=0
+          for file in $(find prompts -name '*.md' ! -name 'README.md'); do
+            if ! grep -q '## Prompt' "$file"; then
+              echo "ERROR: Missing '## Prompt' section in $file"
+              errors=$((errors + 1))
+            fi
+            if ! grep -q '## Variables' "$file"; then
+              echo "WARNING: Missing '## Variables' section in $file"
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors validation errors."
+            exit 1
+          fi
+          echo "All prompts validated successfully."
+
+      - name: Check for broken internal links
+        run: |
+          echo "Checking for broken internal links..."
+          find . -name '*.md' -exec grep -l '\[.*\](prompts/' {} \; | while read -r file; do
+            grep -oP '\(prompts/[^)]+\)' "$file" | tr -d '()' | while read -r link; do
+              if [ ! -e "$link" ]; then
+                echo "WARNING: Broken link '$link' in $file"
+              fi
+            done
+          done
+          echo "Link check complete."
