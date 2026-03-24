@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `naming-conventions`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use when writing or reviewing code for a specific language/framework to ensure idiomatic naming.
+
+- **Use case:** Code review, onboarding, cross-language team alignment
+- **Prerequisites:** Target language/framework identified
+- **Scope:** Language-specific conventions; builds on `naming-general-guide`
+
 ## Prompt
 
 ```text
@@ -71,3 +79,10 @@ You are an expert in {{LANGUAGE}} ecosystem conventions. Produce a definitive na
 ## Tips & Variations
 
 - For multi-language projects: "Generate a cross-language naming translation table showing how the same concept is named in {{LANG1}} vs {{LANG2}}."
+
+## Composition
+
+- **Precedes:** `coding-clean-code-principles`, `review-checklist`
+- **Follows:** `naming-general-guide`
+- **Combines with:** `naming-general-guide`, `coding-clean-code-principles`
+- **Overlay:** Technology overlays available in `overlays/`

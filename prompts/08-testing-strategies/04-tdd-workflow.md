@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `testing-strategies`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt to apply Test-Driven Development methodology to a feature.
+
+- **Use case:** New feature development, refactoring with safety net, teaching TDD.
+- **Prerequisites:** Feature requirements, testing framework setup.
+- **Scope:** Red-green-refactor cycle, test case design, incremental development.
+
 ## Prompt
 
 ```text
@@ -82,3 +90,10 @@ All tests: ✅ {{pass_count}} passing
 
 - For BDD: "Use Gherkin/Cucumber syntax for the outer loop, TDD for the inner loop."
 - Add: "Include outside-in TDD (London school) with mocking."
+
+## Composition
+
+- **Precedes:** `testing-unit`
+- **Follows:** Requirements gathering
+- **Combines with:** `coding-clean-code-principles`, `coding-solid-principles`
+- **Overlay:** `overlays/{tech}/testing-tdd.overlay.md`

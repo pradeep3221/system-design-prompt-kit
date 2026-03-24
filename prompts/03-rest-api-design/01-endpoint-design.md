@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `api-design/rest`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing new REST API endpoints or reviewing existing ones.
+
+- **Use case:** Starting a new API resource, refactoring existing endpoints, or preparing an API specification.
+- **Prerequisites:** Resource name, business requirements, target consumers (frontend, mobile, third-party).
+- **Scope:** Endpoint structure, HTTP methods, status codes, and URL patterns. Does not cover implementation code.
+
 ## Prompt
 
 ```text
@@ -78,3 +86,10 @@ Document why specific design choices were made (e.g., PATCH vs PUT, nested vs. f
 
 - For microservices: "Design with cross-service communication contracts (sync + async)."
 - Add: "Include rate limiting headers and HATEOAS links in responses."
+
+## Composition
+
+- **Precedes:** `api-rest-error-response`, `api-rest-security`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `api-rest-versioning`, `api-rest-pagination-filtering`
+- **Overlay:** `overlays/{tech}/api-rest-endpoint-design.overlay.md`

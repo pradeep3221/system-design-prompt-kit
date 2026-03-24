@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `testing-strategies`
 - **Complexity:** `basic`
 
+## Context
+
+Use this prompt to generate unit tests or design a unit testing strategy.
+
+- **Use case:** Test-first development, adding coverage to existing code, establishing testing patterns.
+- **Prerequisites:** Code under test, framework choice, coverage targets.
+- **Scope:** Test structure, mocking strategies, assertion patterns, test naming conventions.
+
 ## Prompt
 
 ```text
@@ -85,3 +93,10 @@ Write tests for:
 
 - Add: "Use property-based testing for mathematical functions."
 - Add: "Generate a mutation testing analysis."
+
+## Composition
+
+- **Precedes:** `testing-integration`
+- **Follows:** `coding-clean-code-principles`, `arch-clean-hexagonal`
+- **Combines with:** `testing-tdd-workflow`
+- **Overlay:** `overlays/{tech}/testing-unit.overlay.md`

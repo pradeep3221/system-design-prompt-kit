@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `coding-best-practices`
 - **Complexity:** `basic`
 
+## Context
+
+Use when reviewing or improving code quality. This is the foundational prompt for any code-touching workflow — apply it first before deeper SOLID or refactoring analysis.
+
+- **Use case:** Code review, greenfield module development, tech debt reduction
+- **Prerequisites:** A code snippet or codebase to analyze
+- **Scope:** Single-file or module-level review; not for architecture-level concerns
+
 ## Prompt
 
 ```text
@@ -82,3 +90,10 @@ You are a senior software engineer specializing in clean code practices. Analyze
 - For a quick review, ask to focus on only the top 3 most impactful improvements.
 - Append "Also suggest which automated linting rules would catch these issues" for tooling recommendations.
 - Add "Rate the overall cleanliness from 1-10 with justification" for a summary score.
+
+## Composition
+
+- **Precedes:** `coding-solid-principles`, `coding-dry-kiss`, `coding-refactoring-patterns`
+- **Follows:** (entry point — no prerequisites)
+- **Combines with:** `coding-solid-principles`, `coding-dry-kiss`, `review-checklist`, `naming-general-guide`
+- **Overlay:** Technology overlays available in `overlays/`

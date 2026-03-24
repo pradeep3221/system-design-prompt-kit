@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `api-design/rest`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing paginated list endpoints or adding filtering/sorting capabilities.
+
+- **Use case:** Any list endpoint returning collections, search endpoints, or data-heavy APIs.
+- **Prerequisites:** Resource schema, expected dataset size, consumer requirements.
+- **Scope:** Pagination patterns (cursor, offset), filtering syntax, sorting, response metadata.
+
 ## Prompt
 
 ```text
@@ -101,3 +109,10 @@ Design a filtering system supporting:
 
 - For GraphQL: "Design with Relay-style cursor connections."
 - Add: "Include OpenAPI spec for the paginated endpoint."
+
+## Composition
+
+- **Precedes:** `db-query-optimization`
+- **Follows:** `api-rest-endpoint-design`
+- **Combines with:** `db-indexing-strategy`
+- **Overlay:** `overlays/{tech}/api-rest-pagination.overlay.md`

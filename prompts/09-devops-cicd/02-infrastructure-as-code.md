@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `devops-cicd`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when defining infrastructure using code (Terraform, Pulumi, Bicep, etc.).
+
+- **Use case:** Cloud provisioning, environment standardization, infrastructure reviews.
+- **Prerequisites:** Cloud platform, resource requirements, network architecture.
+- **Scope:** Resource definitions, modules, state management, drift detection, compliance checks.
+
 ## Prompt
 
 ```text
@@ -107,3 +115,10 @@ infrastructure/
 
 - Add: "Include a cost estimate using Infracost."
 - Add: "Generate a compliance check using Checkov/tfsec."
+
+## Composition
+
+- **Precedes:** `devops-monitoring-observability`
+- **Follows:** `system-capacity-planning`
+- **Combines with:** `security-secrets-management`
+- **Overlay:** `overlays/{tech}/devops-iac.overlay.md`

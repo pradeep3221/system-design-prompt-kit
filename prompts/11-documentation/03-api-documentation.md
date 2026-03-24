@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `documentation`
 - **Complexity:** `basic`
 
+## Context
+
+Use this prompt when creating developer-facing API documentation.
+
+- **Use case:** API launch documentation, developer portal content, Postman collections.
+- **Prerequisites:** API endpoint design, authentication details, example requests.
+- **Scope:** Endpoint reference, authentication guide, code examples, error catalog.
+
 ## Prompt
 
 ```text
@@ -119,3 +127,10 @@ response = requests.{{method}}('{{BASE_URL}}{{PATH}}', ...)
 
 - Add: "Generate an OpenAPI 3.0 specification from these endpoints."
 - Add: "Create a Postman collection for these endpoints."
+
+## Composition
+
+- **Precedes:** API launch
+- **Follows:** `api-rest-endpoint-design`, `api-rest-error-response`
+- **Combines with:** `api-rest-versioning`
+- **Overlay:** `overlays/{tech}/docs-api.overlay.md`

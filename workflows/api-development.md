@@ -30,7 +30,7 @@ graph TD
 - **Overlay:** Apply technology overlay (dotnet / node / python / java)
 
 ### Step 2: Error Response Design
-- **Prompt:** `api-rest-error-response-design`
+- **Prompt:** `api-rest-error-response`
 - **Input:** Output from Step 1
 - **Output:** Error taxonomy, RFC 7807 response format, error codes
 
@@ -76,7 +76,7 @@ graph TD
 - **Output:** Integration test suite, test data strategy
 
 ### Step 8: API Documentation
-- **Prompt:** `docs-api-documentation`
+- **Prompt:** `docs-api`
 - **Input:** OpenAPI spec, auth details
 - **Output:** Developer portal content, usage examples
 

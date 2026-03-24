@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `system-design`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt to drill into the detailed design of a specific component.
+
+- **Use case:** After HLD is approved, to design individual components, services, or modules.
+- **Prerequisites:** High-level design, component boundaries, API contracts.
+- **Scope:** Class diagrams, sequence diagrams, internal data models, algorithm choices.
+
 ## Prompt
 
 ```text
@@ -91,3 +99,10 @@ For any non-trivial business logic:
 
 - Add: "Generate PlantUML for class and sequence diagrams."
 - For data-intensive components: "Focus on the data pipeline design (ETL, streaming)."
+
+## Composition
+
+- **Precedes:** `db-schema-design`, `testing-unit`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `arch-clean-hexagonal`, `coding-solid-principles`
+- **Overlay:** `overlays/{tech}/system-low-level-design.overlay.md`

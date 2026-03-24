@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `architecture-patterns`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when designing asynchronous, event-based systems.
+
+- **Use case:** Decoupling services, event sourcing, real-time data pipelines, CQRS read-side updates.
+- **Prerequisites:** Domain events identified, consistency requirements, message broker selection.
+- **Scope:** Event schemas, topic design, consumer patterns, ordering, idempotency.
+
 ## Prompt
 
 ```text
@@ -87,3 +95,10 @@ Compare for this use case: Kafka vs. RabbitMQ vs. Cloud-native (SQS/SNS, Event G
 
 - For CQRS: "Combine with CQRS pattern for read model projections."
 - Add: "Generate AsyncAPI specification for the event catalog."
+
+## Composition
+
+- **Precedes:** `bgnd-message-consumer-design`
+- **Follows:** `arch-microservices-design`
+- **Combines with:** `arch-cqrs-pattern`, `db-schema-design`
+- **Overlay:** `overlays/{tech}/arch-event-driven.overlay.md`

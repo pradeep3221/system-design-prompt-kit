@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `testing-strategies`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing end-to-end tests for user-facing flows.
+
+- **Use case:** Critical path testing, regression test suites, release validation.
+- **Prerequisites:** User journeys, page/screen inventory, test environment.
+- **Scope:** Test scenarios, page objects, data setup/teardown, CI integration.
+
 ## Prompt
 
 ```text
@@ -94,3 +102,10 @@ Feature: {{JOURNEY_NAME}}
 
 - For APIs only: "Design E2E API tests using Supertest/httpx without UI."
 - Add: "Include visual regression testing with Percy or Chromatic."
+
+## Composition
+
+- **Precedes:** `devops-cicd-pipeline`
+- **Follows:** `testing-integration`
+- **Combines with:** `frontend-component-design`
+- **Overlay:** `overlays/{tech}/testing-e2e.overlay.md`

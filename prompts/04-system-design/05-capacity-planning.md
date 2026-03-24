@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `system-design`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt for sizing infrastructure and estimating costs.
+
+- **Use case:** Pre-launch infrastructure planning, budget estimation, cloud cost optimization.
+- **Prerequisites:** Traffic estimates, scalability analysis, SLA targets.
+- **Scope:** Resource sizing (compute, storage, network), cost projections, growth modeling.
+
 ## Prompt
 
 ```text
@@ -108,3 +116,10 @@ Define when to scale each resource (metrics and thresholds).
 
 - For interview prep: "Format as a 5-minute back-of-envelope estimation."
 - Add: "Include a Terraform/IaC snippet for provisioning the estimated infrastructure."
+
+## Composition
+
+- **Precedes:** `devops-infrastructure-as-code`
+- **Follows:** `system-scalability-analysis`, `system-trade-off-analysis`
+- **Combines with:** `devops-monitoring-observability`
+- **Overlay:** `overlays/{tech}/system-capacity-planning.overlay.md`

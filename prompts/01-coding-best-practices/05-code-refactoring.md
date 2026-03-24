@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `coding-best-practices`
 - **Complexity:** `advanced`
 
+## Context
+
+Use when tackling legacy code, code smells, or systematic refactoring with Martin Fowler techniques.
+
+- **Use case:** Tech debt reduction, legacy modernization, pre-feature cleanup
+- **Prerequisites:** Code smell identification from `review-checklist` or `coding-clean-code-principles`
+- **Scope:** Module-to-service level refactoring; for architecture-level changes use `arch-*` prompts
+
 ## Prompt
 
 ```text
@@ -73,3 +81,10 @@ Provide the complete refactored version with comments marking each change.
 
 - Add: "Also generate the git commit messages for each refactoring step."
 - For legacy code: "Assume no tests exist — include characterization tests before refactoring."
+
+## Composition
+
+- **Precedes:** `testing-unit`, `testing-tdd-workflow`
+- **Follows:** `coding-clean-code-principles`, `coding-solid-principles`, `coding-dry-kiss`, `review-checklist`
+- **Combines with:** `coding-clean-code-principles`, `coding-solid-principles`, `coding-dry-kiss`, `testing-unit`
+- **Overlay:** Technology overlays available in `overlays/`

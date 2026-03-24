@@ -17,6 +17,14 @@ overlay-compatible: false
 - **Category:** `documentation`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when writing a technical proposal (RFC) for team review.
+
+- **Use case:** New feature proposals, architecture changes, process improvements requiring consensus.
+- **Prerequisites:** Problem statement, proposed solution, stakeholder list.
+- **Scope:** RFC document with motivation, design, alternatives, rollout plan, open questions.
+
 ## Prompt
 
 ```text
@@ -129,3 +137,10 @@ Related ADRs, design docs, external resources.
 
 - For lightweight proposals: "Use a 1-page concise RFC format."
 - Add: "Include a RACI matrix for the implementation."
+
+## Composition
+
+- **Precedes:** `docs-adr`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `system-trade-off-analysis`
+- **Overlay:** N/A (technology-agnostic)

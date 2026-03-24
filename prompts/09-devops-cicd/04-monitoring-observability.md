@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `devops-cicd`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when designing monitoring, logging, and observability for a system.
+
+- **Use case:** New service observability, SLO definition, incident response improvement.
+- **Prerequisites:** Architecture diagram, SLIs/SLOs, deployment platform.
+- **Scope:** Metrics, logs, traces (OpenTelemetry), dashboards, alerting rules, runbook triggers.
+
 ## Prompt
 
 ```text
@@ -106,3 +114,10 @@ You are an SRE / observability engineer. Design a monitoring and observability s
 
 - Add: "Generate Grafana dashboard JSON for the key metrics."
 - Add: "Design synthetic monitoring / uptime checks."
+
+## Composition
+
+- **Precedes:** `docs-runbook`
+- **Follows:** `devops-infrastructure-as-code`, `devops-cicd-pipeline`
+- **Combines with:** `crosscut-slo-sli-error-budgets`
+- **Overlay:** `overlays/{tech}/devops-monitoring.overlay.md`

@@ -42,7 +42,7 @@ graph TD
 - [ ] Technology stack is finalized
 
 ### Step 3: Coding Standards
-- **Prompt:** `code-clean-code-principles` + `code-solid-principles` + `naming-general-guide`
+- **Prompt:** `coding-clean-code-principles` + `coding-solid-principles` + `naming-general-guide`
 - **Input:** Selected technology stack
 - **Output:** Coding guidelines, naming conventions, linting configuration
 - **Overlay:** Apply technology overlay (e.g., `overlays/dotnet/`, `overlays/node/`)
@@ -58,7 +58,7 @@ graph TD
 - **Output:** Full API specification with versioning, pagination, error handling
 
 ### Step 6: Security Baseline
-- **Prompt:** `security-owasp-top-10-review` + `security-authentication-design` + `security-input-validation` + `security-secrets-management`
+- **Prompt:** `security-owasp-top-10` + `security-authentication-design` + `security-input-validation` + `security-secrets-management`
 - **Input:** All outputs from Steps 1-5
 - **Output:** Security architecture, auth flow, input validation rules, secrets strategy
 
@@ -70,7 +70,7 @@ graph TD
 - [ ] API security requirements met
 
 ### Step 7: CI/CD Pipeline
-- **Prompt:** `devops-cicd-pipeline-design` + `devops-containerization`
+- **Prompt:** `devops-cicd-pipeline` + `devops-containerization`
 - **Input:** Technology stack, deployment targets
 - **Output:** Pipeline definition, Dockerfile, build/test/deploy stages
 
@@ -85,7 +85,7 @@ graph TD
 - **Output:** Logging strategy, metrics, alerting rules, dashboards
 
 ### Step 10: Documentation
-- **Prompt:** `docs-adr` + `docs-api-documentation` + `docs-runbook`
+- **Prompt:** `docs-adr` + `docs-api` + `docs-runbook`
 - **Input:** All outputs from Steps 1-9
 - **Output:** ADRs for all decisions, API docs, operational runbook
 

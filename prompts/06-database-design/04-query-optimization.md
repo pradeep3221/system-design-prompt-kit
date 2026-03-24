@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `database-design`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when optimizing slow or expensive database queries.
+
+- **Use case:** Performance incidents, query review, optimizing hot paths.
+- **Prerequisites:** Slow query log or EXPLAIN output, schema, index information.
+- **Scope:** Query rewriting, join optimization, subquery elimination, execution plan analysis.
+
 ## Prompt
 
 ```text
@@ -85,3 +93,10 @@ New indexes required, with estimated size and maintenance cost.
 
 - Add: "Include the EXPLAIN ANALYZE output interpretation."
 - For ORM users: "Show the optimized query as ORM code ({{ORM_NAME}})."
+
+## Composition
+
+- **Precedes:** `perf-performance-profiling`
+- **Follows:** `db-indexing-strategy`
+- **Combines with:** `api-rest-pagination-filtering`
+- **Overlay:** `overlays/{tech}/db-query-optimization.overlay.md`

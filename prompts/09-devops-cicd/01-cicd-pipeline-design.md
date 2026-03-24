@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `devops-cicd`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing or improving CI/CD pipelines.
+
+- **Use case:** New project pipeline setup, migrating CI/CD platforms, adding stages to existing pipelines.
+- **Prerequisites:** Technology stack, deployment targets, branching strategy.
+- **Scope:** Build, test, deploy stages, environment promotion, approval gates, artifact management.
+
 ## Prompt
 
 ```text
@@ -100,3 +108,10 @@ You are a DevOps engineer. Design a CI/CD pipeline for {{PROJECT_NAME}}.
 
 - For monorepo: "Add affected-project detection for selective builds."
 - Add: "Include release automation with semantic-release."
+
+## Composition
+
+- **Precedes:** `devops-containerization`
+- **Follows:** `testing-unit`, `testing-integration`
+- **Combines with:** `devops-infrastructure-as-code`, `security-secrets-management`
+- **Overlay:** `overlays/{tech}/devops-cicd.overlay.md`

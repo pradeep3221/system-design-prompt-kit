@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `code-review`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt to generate structured, actionable PR feedback comments.
+
+- **Use case:** Automating review feedback, standardizing review format, mentoring junior developers.
+- **Prerequisites:** Review findings from checklist, changed files.
+- **Scope:** Feedback comments with severity, suggestions, code examples.
+
 ## Prompt
 
 ```text
@@ -87,3 +95,10 @@ Example:
 
 - For mentoring: "For a junior developer, include brief explanations of WHY each suggestion matters."
 - For large PRs: "Focus on the top 5 most impactful issues."
+
+## Composition
+
+- **Precedes:** Review completion
+- **Follows:** `review-checklist`
+- **Combines with:** `coding-clean-code-principles`, `coding-solid-principles`
+- **Overlay:** N/A (technology-agnostic)

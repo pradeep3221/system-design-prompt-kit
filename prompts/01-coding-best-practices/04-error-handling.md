@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `coding-best-practices`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use when designing error handling strategy, logging, retry logic, or API error responses.
+
+- **Use case:** Service error handling, API error design, resilience patterns
+- **Prerequisites:** Understanding of the service's failure modes and SLAs
+- **Scope:** Per-service or per-module error strategy; pair with `api-rest-error-response` for API layer
+
 ## Prompt
 
 ```text
@@ -86,3 +94,10 @@ You are an expert in building resilient, production-grade software. Design or re
 
 - For microservices: "Include cross-service error propagation and gRPC error mapping."
 - For frontend: "Include user-facing error message guidelines and retry UX."
+
+## Composition
+
+- **Precedes:** `api-rest-error-response`, `devops-monitoring-observability`
+- **Follows:** `coding-clean-code-principles`, `api-rest-endpoint-design`
+- **Combines with:** `api-rest-error-response`, `devops-monitoring-observability`, `security-input-validation`
+- **Overlay:** Technology overlays available in `overlays/`

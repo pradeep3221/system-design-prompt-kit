@@ -17,6 +17,14 @@ overlay-compatible: false
 - **Category:** `documentation`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when creating operational runbooks for production services.
+
+- **Use case:** On-call documentation, incident response playbooks, operational handoffs.
+- **Prerequisites:** Service architecture, monitoring dashboards, common failure modes.
+- **Scope:** Diagnostic procedures, escalation paths, remediation steps, decision trees.
+
 ## Prompt
 
 ```text
@@ -126,3 +134,10 @@ If unresolved after {{ESCALATION_TIME}} minutes:
 
 - For automated remediation: "Include auto-healing scripts that can be triggered."
 - Add: "Generate a decision tree diagram for the diagnosis flow."
+
+## Composition
+
+- **Precedes:** Go-live
+- **Follows:** `devops-monitoring-observability`
+- **Combines with:** `devops-cicd-pipeline`
+- **Overlay:** `overlays/{tech}/docs-runbook.overlay.md`

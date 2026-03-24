@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `naming-conventions`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use when designing database schemas to ensure consistent table, column, and constraint naming.
+
+- **Use case:** Schema design, migration planning, cross-team database standards
+- **Prerequisites:** Database engine and domain model identified
+- **Scope:** Naming only; pair with `db-schema-design` for full schema design
+
 ## Prompt
 
 ```text
@@ -75,3 +83,10 @@ You are a database architect. Create a comprehensive naming convention guide for
 
 - Add: "Generate the DDL statements using these conventions."
 - For NoSQL: "Adapt these conventions for MongoDB collection and field naming."
+
+## Composition
+
+- **Precedes:** `db-schema-design`, `db-migration-planning`
+- **Follows:** `naming-general-guide`
+- **Combines with:** `db-schema-design`, `naming-general-guide`, `db-indexing-strategy`
+- **Overlay:** Technology overlays available in `overlays/`

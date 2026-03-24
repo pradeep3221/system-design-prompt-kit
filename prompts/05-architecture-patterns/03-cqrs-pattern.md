@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `architecture-patterns`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when designing Command Query Responsibility Segregation patterns.
+
+- **Use case:** Systems with asymmetric read/write loads, complex domain logic, event-sourced systems.
+- **Prerequisites:** Domain model, read vs write access patterns, consistency requirements.
+- **Scope:** Command/query separation, read models, projections, eventual consistency handling.
+
 ## Prompt
 
 ```text
@@ -76,3 +84,10 @@ Provide implementation code in {{LANGUAGE}}/{{FRAMEWORK}}.
 
 - Add: "Combine with Event Sourcing for full audit trail."
 - For simpler needs: "Design a lightweight CQRS with separate read/write repositories but shared database."
+
+## Composition
+
+- **Precedes:** `db-schema-design`, `bgnd-message-consumer-design`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `arch-event-driven`, `db-query-optimization`
+- **Overlay:** `overlays/{tech}/arch-cqrs.overlay.md`

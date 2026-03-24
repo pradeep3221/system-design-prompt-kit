@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `security`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when designing authentication and authorization flows.
+
+- **Use case:** New auth system, migrating auth providers, adding MFA, designing RBAC/ABAC.
+- **Prerequisites:** User types, access requirements, compliance constraints.
+- **Scope:** Auth flows (OAuth 2.0, OIDC, SAML), token management, session handling, RBAC.
+
 ## Prompt
 
 ```text
@@ -97,3 +105,10 @@ Provide implementation code in {{LANGUAGE}}/{{FRAMEWORK}}.
 
 - For enterprise: "Include SAML 2.0 SSO integration design."
 - Add: "Design an API key authentication system for developer portal."
+
+## Composition
+
+- **Precedes:** `security-secrets-management`
+- **Follows:** `security-owasp-top-10`
+- **Combines with:** `api-rest-security`
+- **Overlay:** `overlays/{tech}/security-authentication.overlay.md`

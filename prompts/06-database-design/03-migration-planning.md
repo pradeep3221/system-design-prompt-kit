@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `database-design`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when planning schema changes to production databases.
+
+- **Use case:** Adding/altering tables, zero-downtime migrations, data backfills.
+- **Prerequisites:** Current schema, target schema, downtime constraints.
+- **Scope:** Migration scripts, rollback plans, data transformation, deployment sequence.
+
 ## Prompt
 
 ```text
@@ -93,3 +101,10 @@ For each step, provide:
 
 - For large tables: "Include pg_repack or pt-online-schema-change considerations."
 - Add: "Generate the migration files for {{FRAMEWORK}}."
+
+## Composition
+
+- **Precedes:** `devops-cicd-pipeline`
+- **Follows:** `db-schema-design`, `db-indexing-strategy`
+- **Combines with:** `testing-integration`
+- **Overlay:** `overlays/{tech}/db-migration.overlay.md`

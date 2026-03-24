@@ -16,10 +16,10 @@ When writing or reviewing code in this workspace:
 ## API Design
 
 When designing or reviewing APIs:
-- Follow REST conventions from `prompts/03-api-design/rest/`
+- Follow REST conventions from `prompts/03-rest-api-design/`
 - Use RFC 7807 Problem Details for error responses
-- Apply security requirements from `prompts/07-security/05-api-security.md`
-- Include pagination for list endpoints per `prompts/03-api-design/rest/04-pagination-filtering.md`
+- Apply security requirements from `prompts/03-rest-api-design/05-api-security.md`
+- Include pagination for list endpoints per `prompts/03-rest-api-design/04-pagination-filtering.md`
 
 ## Architecture
 

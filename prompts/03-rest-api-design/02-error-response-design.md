@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `api-design/rest`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing a consistent error response format for your API.
+
+- **Use case:** Establishing error contracts, implementing RFC 7807/9457 Problem Details, or standardizing error handling across services.
+- **Prerequisites:** API endpoint design, list of expected error scenarios.
+- **Scope:** Error response structure, status code mapping, error catalogs. Does not cover error handling implementation.
+
 ## Prompt
 
 ```text
@@ -94,3 +102,10 @@ Document how API consumers should handle each error category.
 
 - Add: "Include retry guidance in error responses (Retry-After header)."
 - Add: "Design a problem+json response format per RFC 9457."
+
+## Composition
+
+- **Precedes:** `api-rest-security`, `testing-integration`
+- **Follows:** `api-rest-endpoint-design`
+- **Combines with:** `coding-error-handling`
+- **Overlay:** `overlays/{tech}/api-rest-error-response.overlay.md`

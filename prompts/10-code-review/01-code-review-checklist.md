@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `code-review`
 - **Complexity:** `basic`
 
+## Context
+
+Use this prompt to generate a structured code review checklist for a PR.
+
+- **Use case:** Pull request review, establishing team review standards, training new reviewers.
+- **Prerequisites:** Pull request diff, project coding standards.
+- **Scope:** Correctness, style, performance, security, maintainability checks.
+
 ## Prompt
 
 ```text
@@ -102,3 +110,10 @@ You are a senior engineer conducting a code review. Review the following code ch
 
 - For junior developers: "Emphasize learning opportunities and explain WHY for each suggestion."
 - For security-critical code: "Weight the security section 2x higher."
+
+## Composition
+
+- **Precedes:** `review-pr-feedback`
+- **Follows:** PR submission
+- **Combines with:** `coding-clean-code-principles`, `security-owasp-top-10`
+- **Overlay:** N/A (technology-agnostic)

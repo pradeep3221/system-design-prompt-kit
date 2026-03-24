@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `api-design/rest`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when hardening API security or performing an API security review.
+
+- **Use case:** Pre-launch security review, adding auth to existing APIs, or designing public API security.
+- **Prerequisites:** API endpoint design, authentication requirements, threat model.
+- **Scope:** Authentication, authorization, rate limiting, CORS, input validation at API layer.
+
 ## Prompt
 
 ```text
@@ -96,3 +104,10 @@ Cache-Control: no-store
 
 - For compliance: "Map findings to OWASP API Security Top 10 2023."
 - Add: "Generate automated security test scripts (OWASP ZAP, Burp Suite)."
+
+## Composition
+
+- **Precedes:** `testing-integration`, `docs-api`
+- **Follows:** `api-rest-endpoint-design`, `api-rest-error-response`
+- **Combines with:** `security-owasp-top-10`, `security-authentication`, `security-input-validation`
+- **Overlay:** `overlays/{tech}/api-rest-security.overlay.md`

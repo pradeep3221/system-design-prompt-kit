@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `testing-strategies`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing integration tests across component boundaries.
+
+- **Use case:** API integration tests, database tests, third-party service tests.
+- **Prerequisites:** Component interfaces, test environment setup, test data strategy.
+- **Scope:** Test isolation, test containers, fixture management, API contract verification.
+
 ## Prompt
 
 ```text
@@ -86,3 +94,10 @@ Test Setup:
 
 - Add: "Generate a Docker Compose file for the test infrastructure."
 - Add: "Include testcontainers setup for database testing."
+
+## Composition
+
+- **Precedes:** `testing-e2e`
+- **Follows:** `testing-unit`
+- **Combines with:** `db-schema-design`, `api-rest-endpoint-design`
+- **Overlay:** `overlays/{tech}/testing-integration.overlay.md`

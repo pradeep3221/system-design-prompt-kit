@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `naming-conventions`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use when designing REST API URL structures, route naming, or query parameter conventions.
+
+- **Use case:** API design kickoff, URL structure standardization, API review
+- **Prerequisites:** Resource model or domain entities identified
+- **Scope:** URL/route naming only; pair with `api-rest-endpoint-design` for full endpoint design
+
 ## Prompt
 
 ```text
@@ -71,3 +79,10 @@ You are an API design expert. Create a comprehensive naming convention guide for
 
 - Add: "Include a naming consistency checker script that validates OpenAPI specs."
 - For GraphQL: "Adapt these conventions for GraphQL queries, mutations, and subscriptions."
+
+## Composition
+
+- **Precedes:** `api-rest-endpoint-design`, `api-rest-versioning`
+- **Follows:** `naming-general-guide`
+- **Combines with:** `api-rest-endpoint-design`, `naming-general-guide`, `docs-api`
+- **Overlay:** Technology overlays available in `overlays/`

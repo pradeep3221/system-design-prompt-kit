@@ -24,7 +24,7 @@
         },
         "required": ["resource", "operations"]
       },
-      "prompts": ["api-rest-endpoint-design", "api-rest-error-response-design", "api-rest-versioning", "api-rest-pagination-filtering"]
+      "prompts": ["api-rest-endpoint-design", "api-rest-error-response", "api-rest-versioning", "api-rest-pagination-filtering"]
     },
     {
       "name": "design_system",
@@ -69,7 +69,7 @@
         },
         "required": ["scope"]
       },
-      "prompts": ["security-owasp-top-10-review", "security-authentication-design", "security-input-validation", "security-secrets-management"],
+      "prompts": ["security-owasp-top-10", "security-authentication-design", "security-input-validation", "security-secrets-management"],
       "workflow": "security-audit"
     },
     {
@@ -110,8 +110,56 @@
         },
         "required": ["files"]
       },
-      "prompts": ["review-code-review-checklist", "review-pr-feedback-generator", "review-architecture-review"],
+      "prompts": ["review-checklist", "review-pr-feedback", "review-architecture"],
       "workflow": "code-review"
+    },
+    {
+      "name": "design_graphql_api",
+      "description": "Design GraphQL API with schema, resolvers, federation, and security hardening.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project_name": {
+            "type": "string",
+            "description": "Name of the project"
+          },
+          "domain_types": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Core domain types to model (e.g., ['User', 'Product', 'Order'])"
+          },
+          "federated": {
+            "type": "boolean",
+            "description": "Whether to design for Apollo Federation / subgraph architecture"
+          }
+        },
+        "required": ["project_name", "domain_types"]
+      },
+      "prompts": ["graphql-schema-design", "graphql-resolver-patterns", "graphql-federation", "graphql-security"]
+    },
+    {
+      "name": "select_architecture",
+      "description": "Select and design an architecture pattern — from layered monolith to microservices, serverless, or migration strategies.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "system_name": {
+            "type": "string",
+            "description": "Name of the system"
+          },
+          "style": {
+            "type": "string",
+            "enum": ["layered", "modular-monolith", "microservices", "serverless", "event-driven", "cqrs"],
+            "description": "Architecture style to design for"
+          },
+          "migration": {
+            "type": "boolean",
+            "description": "Whether this is a migration from an existing system"
+          }
+        },
+        "required": ["system_name"]
+      },
+      "prompts": ["arch-layered", "arch-modular-monolith", "arch-microservices-design", "arch-event-driven", "arch-cqrs-pattern", "arch-serverless", "arch-bff-pattern", "arch-saga-pattern", "arch-strangler-fig"]
     }
   ]
 }

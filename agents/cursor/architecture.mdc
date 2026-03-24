@@ -1,0 +1,33 @@
+---
+description: Architecture pattern prompts for designing system architecture
+globs: ["**/architecture/**", "**/arch/**", "**/patterns/**"]
+alwaysApply: false
+---
+
+# Architecture Patterns
+
+When making architecture decisions, use these prompt patterns:
+
+## Foundational
+- **Layered Architecture** (`arch-layered`): Start here for traditional N-tier monolith structure
+- **Modular Monolith** (`arch-modular-monolith`): Monolith with module boundaries — microservices-ready
+- **Clean/Hexagonal** (`arch-clean-hexagonal`): Ports and adapters with strict dependency inversion
+
+## Distributed
+- **Microservices** (`arch-microservices-design`): Service decomposition, communication, data ownership
+- **Event-Driven** (`arch-event-driven`): Event sourcing, pub/sub, CQRS integration
+- **CQRS** (`arch-cqrs-pattern`): Separate read/write models for high-performance systems
+- **Saga** (`arch-saga-pattern`): Distributed transactions with compensation logic
+
+## Specialized
+- **Serverless** (`arch-serverless`): FaaS design with event routing and cost optimization
+- **BFF** (`arch-bff-pattern`): Backend-for-Frontend for multi-platform products
+
+## Migration
+- **Strangler Fig** (`arch-strangler-fig`): Incremental legacy modernization
+
+## Decision Flow
+1. Start with `system-high-level-design` to identify architecture style
+2. Apply the relevant pattern prompt for detailed design
+3. Use `system-trade-off-analysis` to validate decisions
+4. For migration scenarios, start with `arch-strangler-fig`

@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `architecture-patterns`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when decomposing a system into microservices.
+
+- **Use case:** Greenfield microservices architecture, monolith decomposition, service boundary definition.
+- **Prerequisites:** High-level design, domain model, team structure.
+- **Scope:** Service decomposition, communication patterns, data ownership, deployment strategy.
+
 ## Prompt
 
 ```text
@@ -86,3 +94,10 @@ For each service interaction, specify:
 
 - Add: "Generate a Mermaid service dependency diagram."
 - For team topology: "Map services to team boundaries using Team Topologies."
+
+## Composition
+
+- **Precedes:** `arch-event-driven`, `devops-containerization`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `db-schema-design`, `api-rest-endpoint-design`
+- **Overlay:** `overlays/{tech}/arch-microservices.overlay.md`

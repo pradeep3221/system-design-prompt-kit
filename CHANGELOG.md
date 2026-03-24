@@ -6,7 +6,59 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [2.0.0] - 2025-07-08
+## [2.1.0] - 2026-03-24
+
+### Added
+
+#### New Prompt Category
+- **03b — GraphQL API Design** (4 prompts) — Schema design (SDL), resolver patterns (DataLoader, N+1), federation (Apollo Federation v2), security hardening (query depth, rate limiting, persisted queries).
+
+#### Architecture Tier Expansion (6 new prompts)
+- **Layered Architecture** (`arch-layered`) — N-tier with dependency rules and cross-cutting concerns.
+- **Modular Monolith** (`arch-modular-monolith`) — Module boundaries, inter-module events, data isolation.
+- **Serverless Architecture** (`arch-serverless`) — FaaS decomposition, event routing, cost modeling.
+- **Backend-for-Frontend** (`arch-bff-pattern`) — Client-specific backends, data aggregation.
+- **Saga Pattern** (`arch-saga-pattern`) — Distributed transactions with compensation logic.
+- **Strangler Fig Pattern** (`arch-strangler-fig`) — Incremental legacy modernization.
+
+#### New Workflows (3)
+- **Database Change** workflow (6 steps) — Schema design through migration and deployment.
+- **Migration** workflow (8 steps) — Legacy modernization using Strangler Fig pattern.
+- **Frontend Development** workflow (8 steps) — SPA from architecture to deployment.
+
+#### Overlay Content Files (6 new)
+- Node.js overlay: REST endpoint design (NestJS + Express patterns).
+- Python overlay: REST endpoint design (FastAPI + Django REST Framework patterns).
+- React overlay: SPA design (Next.js App Router, TanStack Query, Zustand).
+- Angular overlay: SPA design (Standalone components, NgRx SignalStore).
+- Vue overlay: SPA design (Nuxt 3, Composition API, Pinia).
+- Java overlay: REST endpoint design (Spring Boot 3, records, ProblemDetail).
+
+#### Tooling
+- **Validation script** (`scripts/validate-prompts.js`) — Validates frontmatter, required sections, ID uniqueness, and cross-references.
+- **Index generator** (`scripts/generate-index.js`) — Generates `prompt-index.json` with all prompt metadata.
+- **CODEOWNERS** — Code ownership configuration.
+- **.gitignore** — Ignore generated files and OS artifacts.
+
+#### Agent Config Expansion
+- Cursor: 2 new rule files (`architecture.mdc`, `database.mdc`).
+- SKILL.md: Added `graphql-design` skill, expanded `architecture` skill to 10 prompts.
+- MCP tools.json: Added `design_graphql_api` and `select_architecture` tools.
+
+### Fixed
+- Fixed cross-reference ID mismatches in SKILL.md (9), tools.json (2), copilot-instructions.md (3), and all 5 workflow files.
+- Fixed `depends-on` reference `arch-event-driven-architecture` → `arch-event-driven` in message consumer prompt.
+- Fixed CHANGELOG v2.0.0 date ordering.
+
+### Changed
+- Added **Context** and **Composition** sections to all 47 original prompts (categories 01–11).
+- Updated README: prompt count from 69 → 83, added GraphQL category row, updated Architecture count 4 → 10.
+- Updated Architecture Patterns README with 6 new rows.
+- Updated Workflows README with 3 new rows.
+
+---
+
+## [2.0.0] - 2026-03-24
 
 ### Added
 

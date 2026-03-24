@@ -35,7 +35,7 @@ technical-prompt-library/
 ├── .github/
 │   └── copilot-instructions.md      # GitHub Copilot workspace instructions
 │
-├── prompts/                         # 🔑 Core prompt library (18 categories, 69 prompts)
+├── prompts/                         # 🔑 Core prompt library (19 categories, 83 prompts)
 │   ├── 01-coding-best-practices/    # Clean code, SOLID, DRY, etc.
 │   ├── 02-naming-conventions/       # Variables, functions, files, APIs
 │   ├── 03-rest-api-design/          # RESTful API best practices
@@ -127,8 +127,9 @@ Resource: {{RESOURCE: Orders}}
 | 01 | [Coding Best Practices](prompts/01-coding-best-practices/) | Clean code, SOLID principles, DRY, KISS, error handling | 5 |
 | 02 | [Naming Conventions](prompts/02-naming-conventions/) | Variables, functions, classes, files, APIs, databases | 5 |
 | 03 | [REST API Design](prompts/03-rest-api-design/) | Endpoint design, versioning, error responses, pagination | 5 |
+| 03b | [GraphQL API Design](prompts/03b-graphql-api-design/) | Schema design, resolvers, federation, security | 4 |
 | 04 | [System Design](prompts/04-system-design/) | HLD, LLD, scalability, reliability, trade-offs | 5 |
-| 05 | [Architecture Patterns](prompts/05-architecture-patterns/) | Microservices, CQRS, event-driven, hexagonal | 4 |
+| 05 | [Architecture Patterns](prompts/05-architecture-patterns/) | Microservices, CQRS, event-driven, hexagonal, serverless, saga | 10 |
 | 06 | [Database Design](prompts/06-database-design/) | Schema design, normalization, indexing, migrations | 4 |
 | 07 | [Security](prompts/07-security/) | OWASP top 10, auth, encryption, input validation | 4 |
 | 08 | [Testing Strategies](prompts/08-testing-strategies/) | Unit tests, integration, E2E, TDD, mocking | 4 |

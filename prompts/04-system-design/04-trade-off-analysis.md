@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `system-design`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when evaluating competing design approaches or technology choices.
+
+- **Use case:** Architecture Decision Records, design reviews, vendor selection.
+- **Prerequisites:** Two or more design alternatives, evaluation criteria.
+- **Scope:** Weighted trade-off matrices, decision frameworks, risk assessment.
+
 ## Prompt
 
 ```text
@@ -100,3 +108,10 @@ For each option:
 
 - Add: "Generate an ADR (Architecture Decision Record) for the chosen option."
 - For cost decisions: "Include a 3-year TCO comparison."
+
+## Composition
+
+- **Precedes:** `docs-adr`
+- **Follows:** `system-scalability-analysis`
+- **Combines with:** `system-capacity-planning`
+- **Overlay:** N/A (technology-agnostic)

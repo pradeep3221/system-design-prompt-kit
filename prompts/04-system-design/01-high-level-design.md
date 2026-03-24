@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `system-design`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when starting a new system design or evaluating architecture for a feature.
+
+- **Use case:** System design interviews, architecture planning, technical proposals.
+- **Prerequisites:** Business requirements, non-functional requirements, user personas.
+- **Scope:** Component diagrams, data flow, technology selection, deployment topology.
+
 ## Prompt
 
 ```text
@@ -110,3 +118,10 @@ You are a principal systems architect. Create a High-Level Design (HLD) document
 - Add: "Include a C4 model (Context, Container, Component, Code) for the architecture."
 - Add: "Generate Mermaid diagrams for each architectural view."
 - For interview prep: "Present this as a 45-minute system design interview answer."
+
+## Composition
+
+- **Precedes:** `system-low-level-design`, `system-scalability-analysis`
+- **Follows:** Requirements gathering
+- **Combines with:** `arch-microservices-design`, `arch-event-driven`
+- **Overlay:** `overlays/{tech}/system-high-level-design.overlay.md`

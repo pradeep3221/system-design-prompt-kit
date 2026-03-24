@@ -17,6 +17,14 @@ overlay-compatible: false
 - **Category:** `documentation`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when documenting an architecture decision.
+
+- **Use case:** Technology selection, pattern choice, trade-off resolution, design pivots.
+- **Prerequisites:** Decision context, alternatives considered, evaluation criteria.
+- **Scope:** Decision record following ADR format with status, context, decision, consequences.
+
 ## Prompt
 
 ```text
@@ -115,3 +123,10 @@ Why was the chosen option selected over alternatives? Reference specific evaluat
 
 - For lightweight ADRs: "Use the Y-statement format: In the context of X, facing Y, we decided Z, to achieve A, accepting B."
 - Add: "Include a decision matrix scoring each option against weighted criteria."
+
+## Composition
+
+- **Precedes:** Implementation
+- **Follows:** `system-trade-off-analysis`
+- **Combines with:** `review-architecture`
+- **Overlay:** N/A (technology-agnostic)

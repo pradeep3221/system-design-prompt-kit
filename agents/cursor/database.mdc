@@ -1,0 +1,27 @@
+---
+description: Database design and optimization prompts
+globs: ["**/database/**", "**/db/**", "**/migration*/**", "**/schema*/**"]
+alwaysApply: false
+---
+
+# Database Design
+
+When working with databases, use these prompt patterns:
+
+## Design
+- **Schema Design** (`db-schema-design`): Table structure, relationships, constraints, normalization
+- **Indexing Strategy** (`db-indexing-strategy`): Index selection, covering indexes, maintenance
+
+## Operations
+- **Migration Planning** (`db-migration-planning`): Migration scripts, rollback, zero-downtime changes
+- **Query Optimization** (`db-query-optimization`): EXPLAIN analysis, N+1 fixes, caching
+
+## Workflow
+Use the **Database Change** workflow (`workflows/database-change.md`) for end-to-end schema changes:
+Schema Design → Indexing → Migration Planning → Query Optimization → Testing → Deployment
+
+## Key Rules
+- Always use expand-then-contract for schema migrations
+- Never join across microservice/module database boundaries
+- Index all foreign keys
+- Use connection pooling in production

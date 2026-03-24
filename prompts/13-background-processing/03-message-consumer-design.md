@@ -4,7 +4,7 @@ version: "1.0.0"
 category: "background-processing"
 complexity: "advanced"
 tags: ["message-consumer", "event-processing", "kafka", "rabbitmq", "streaming"]
-depends-on: ["arch-event-driven-architecture", "bg-worker-service-design"]
+depends-on: ["arch-event-driven", "bg-worker-service-design"]
 tools: ["copilot", "cursor", "cli"]
 overlay-compatible: true
 ---

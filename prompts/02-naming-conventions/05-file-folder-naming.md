@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `naming-conventions`
 - **Complexity:** `basic`
 
+## Context
+
+Use when setting up project structure or enforcing file/folder naming consistency.
+
+- **Use case:** Monorepo setup, project scaffolding, documentation reorganization
+- **Prerequisites:** Framework and project type identified
+- **Scope:** File and folder names; pair with `naming-general-guide` for code naming
+
 ## Prompt
 
 ```text
@@ -70,3 +78,10 @@ You are a senior engineer establishing project structure standards. Create a fil
 
 - Add: "Generate the shell commands to scaffold this entire structure."
 - Add: "Include a `.editorconfig` and `.gitattributes` file."
+
+## Composition
+
+- **Precedes:** `devops-containerization`, `devops-iac`
+- **Follows:** `naming-general-guide`
+- **Combines with:** `naming-general-guide`, `naming-language-specific`
+- **Overlay:** Technology overlays available in `overlays/`

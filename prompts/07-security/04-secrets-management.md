@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `security`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing a secrets management strategy.
+
+- **Use case:** New project secret handling, migrating from env vars to vault, secret rotation automation.
+- **Prerequisites:** Infrastructure platform, deployment model, compliance requirements.
+- **Scope:** Secret storage, rotation, access control, CI/CD integration, vault configuration.
+
 ## Prompt
 
 ```text
@@ -96,3 +104,10 @@ Provide implementation examples for {{LANGUAGE}}/{{FRAMEWORK}}.
 
 - Add: "Set up automated secret scanning in CI/CD pipeline."
 - For Kubernetes: "Design with External Secrets Operator."
+
+## Composition
+
+- **Precedes:** `devops-cicd-pipeline`
+- **Follows:** `security-authentication`
+- **Combines with:** `devops-infrastructure-as-code`
+- **Overlay:** `overlays/{tech}/security-secrets.overlay.md`

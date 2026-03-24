@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `database-design`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing or reviewing a database schema.
+
+- **Use case:** New feature data modeling, schema reviews, database migrations.
+- **Prerequisites:** Entity list, business rules, relationship descriptions.
+- **Scope:** Tables, columns, relationships, constraints, normalization. Does not cover indexing or queries.
+
 ## Prompt
 
 ```text
@@ -76,3 +84,10 @@ Generate the initial migration file following the framework convention.
 
 - For NoSQL: "Design a MongoDB document schema with embedding vs. referencing decisions."
 - Add: "Include a data dictionary with field descriptions and business rules."
+
+## Composition
+
+- **Precedes:** `db-indexing-strategy`, `db-migration-planning`
+- **Follows:** `system-low-level-design`
+- **Combines with:** `naming-database`, `api-rest-endpoint-design`
+- **Overlay:** `overlays/{tech}/db-schema-design.overlay.md`

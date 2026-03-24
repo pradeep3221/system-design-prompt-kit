@@ -43,7 +43,7 @@ graph TD
 - **Output:** Schema, indexes, migration plan
 
 ### Step 4: API Design (Parallel with Step 3)
-- **Prompt:** `api-rest-endpoint-design` + `api-rest-error-response-design`
+- **Prompt:** `api-rest-endpoint-design` + `api-rest-error-response`
 - **Input:** Component interfaces from Step 2
 - **Output:** API specification, error handling, versioning
 

@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `security`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when designing input validation rules for an application.
+
+- **Use case:** API input handling, form validation, file upload security, query parameter sanitization.
+- **Prerequisites:** Input fields/endpoints, data types, business rules.
+- **Scope:** Validation rules, sanitization, encoding, allowlists, server-side enforcement.
+
 ## Prompt
 
 ```text
@@ -94,3 +102,10 @@ You are a secure coding expert. Design an input validation strategy for the {{AP
 
 - Add: "Generate a reusable validation middleware/decorator library."
 - For APIs: "Include OpenAPI schema validation middleware setup."
+
+## Composition
+
+- **Precedes:** `testing-unit`, `testing-integration`
+- **Follows:** `security-owasp-top-10`
+- **Combines with:** `api-rest-endpoint-design`, `coding-error-handling`
+- **Overlay:** `overlays/{tech}/security-input-validation.overlay.md`

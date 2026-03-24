@@ -19,7 +19,7 @@ graph TD
 ## Step Details
 
 ### Step 1: OWASP Top 10 Review
-- **Prompt:** `security-owasp-top-10-review`
+- **Prompt:** `security-owasp-top-10`
 - **Input:** Application codebase, architecture diagrams, deployment configuration
 - **Output:** Findings mapped to OWASP Top 10 categories with severity ratings
 

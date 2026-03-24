@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `coding-best-practices`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use when designing or refactoring OOP class hierarchies and component boundaries.
+
+- **Use case:** Class design, refactoring coupled components, dependency injection setup
+- **Prerequisites:** Existing class structure or module to evaluate
+- **Scope:** Class/module level design; pair with architecture prompts for system-level concerns
+
 ## Prompt
 
 ```text
@@ -88,3 +96,10 @@ You are an expert software architect. Analyze the following {{LANGUAGE}} code fo
 - For greenfield design: "Design a class structure for {{FEATURE}} that adheres to all SOLID principles."
 - For code review: "Which SOLID violations are the highest priority to fix and why?"
 - Combine with "Also apply clean code naming conventions to the refactored version."
+
+## Composition
+
+- **Precedes:** `coding-refactoring-patterns`, `arch-clean-hexagonal`
+- **Follows:** `coding-clean-code-principles`
+- **Combines with:** `coding-clean-code-principles`, `coding-dry-kiss`, `arch-clean-hexagonal`
+- **Overlay:** Technology overlays available in `overlays/`

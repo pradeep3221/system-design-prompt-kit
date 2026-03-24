@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `code-review`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt for reviewing architecture impact of a change.
+
+- **Use case:** Large PRs crossing component boundaries, new dependency additions, public API changes.
+- **Prerequisites:** System architecture diagram, change scope, dependency map.
+- **Scope:** Architecture impact, dependency analysis, pattern compliance, scalability implications.
+
 ## Prompt
 
 ```text
@@ -95,3 +103,10 @@ You are a principal architect reviewing an architectural proposal or design PR.
 
 - For RFCs: "Include a section evaluating the alternatives presented."
 - Add: "Suggest specific experiments or spikes to de-risk uncertain aspects."
+
+## Composition
+
+- **Precedes:** `docs-adr`
+- **Follows:** `review-checklist`, `review-pr-feedback`
+- **Combines with:** `arch-microservices-design`, `system-trade-off-analysis`
+- **Overlay:** N/A (technology-agnostic)

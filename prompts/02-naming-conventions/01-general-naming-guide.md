@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `naming-conventions`
 - **Complexity:** `basic`
 
+## Context
+
+Use when establishing or enforcing naming standards across a codebase or team.
+
+- **Use case:** Greenfield setup, style guide creation, onboarding documentation
+- **Prerequisites:** Knowledge of the language(s) and frameworks in use
+- **Scope:** Cross-cutting naming rules; pair with `naming-language-specific` for language details
+
 ## Prompt
 
 ```text
@@ -73,3 +81,10 @@ You are a senior software engineer. Create a comprehensive naming convention gui
 
 - Add: "Generate an ESLint/Pylint/StyleCop configuration that enforces these rules."
 - Add: "Include an anti-patterns section with commonly seen bad names."
+
+## Composition
+
+- **Precedes:** `naming-language-specific`, `naming-api-url`, `naming-database`, `naming-file-folder`
+- **Follows:** (entry point — no prerequisites)
+- **Combines with:** `coding-clean-code-principles`, `naming-language-specific`, `review-checklist`
+- **Overlay:** Technology overlays available in `overlays/`

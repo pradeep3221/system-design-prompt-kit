@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `api-design/rest`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when planning API versioning strategy for long-lived APIs.
+
+- **Use case:** Multi-consumer APIs, public APIs, or APIs with breaking change requirements.
+- **Prerequisites:** API endpoint design, consumer inventory, deprecation requirements.
+- **Scope:** Versioning schemes, migration strategies, deprecation policies. Does not cover implementation mechanics.
+
 ## Prompt
 
 ```text
@@ -79,3 +87,10 @@ You are an API architect. Recommend and design an API versioning strategy for {{
 
 - For GraphQL: "Design a schema evolution strategy instead of traditional versioning."
 - For event-driven APIs: "Include event schema versioning with Avro/Protobuf."
+
+## Composition
+
+- **Precedes:** `docs-api`
+- **Follows:** `api-rest-endpoint-design`
+- **Combines with:** `api-rest-error-response`
+- **Overlay:** `overlays/{tech}/api-rest-versioning.overlay.md`

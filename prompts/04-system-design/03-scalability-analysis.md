@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `system-design`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt to analyze and plan for system scalability.
+
+- **Use case:** Pre-launch scaling validation, capacity reviews, or post-incident scaling improvements.
+- **Prerequisites:** High-level design, traffic estimates, SLA targets.
+- **Scope:** Horizontal/vertical scaling, bottleneck analysis, caching, sharding, load balancing.
+
 ## Prompt
 
 ```text
@@ -103,3 +111,10 @@ Recommend cost-optimization strategies.
 
 - For cost-sensitive projects: "Optimize for cost-per-request at target scale."
 - Add: "Include a phased scaling roadmap (3-month, 6-month, 12-month)."
+
+## Composition
+
+- **Precedes:** `system-capacity-planning`, `system-trade-off-analysis`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `db-indexing-strategy`, `perf-caching-strategy`
+- **Overlay:** `overlays/{tech}/system-scalability.overlay.md`

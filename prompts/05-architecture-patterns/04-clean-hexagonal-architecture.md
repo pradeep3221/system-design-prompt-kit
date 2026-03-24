@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `architecture-patterns`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when structuring a service with ports-and-adapters (hexagonal) or clean architecture.
+
+- **Use case:** New service scaffolding, refactoring tightly-coupled code, enforcing dependency rules.
+- **Prerequisites:** Service responsibilities, external dependencies (DB, APIs, messaging).
+- **Scope:** Layer definitions, dependency direction, port/adapter contracts, project structure.
+
 ## Prompt
 
 ```text
@@ -85,3 +93,10 @@ Implement one complete use case showing all layers, from HTTP request to databas
 
 - For DDD: "Include aggregate boundaries and domain event design."
 - Minimal version: "Design a simplified 3-layer architecture for a small service."
+
+## Composition
+
+- **Precedes:** `coding-solid-principles`, `testing-unit`
+- **Follows:** `system-low-level-design`
+- **Combines with:** `coding-clean-code-principles`, `coding-solid-principles`
+- **Overlay:** `overlays/{tech}/arch-clean-hexagonal.overlay.md`

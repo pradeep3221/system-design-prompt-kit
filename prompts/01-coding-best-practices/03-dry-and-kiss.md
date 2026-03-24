@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `coding-best-practices`
 - **Complexity:** `basic`
 
+## Context
+
+Use to identify and eliminate duplication or unnecessary complexity in existing code.
+
+- **Use case:** Code review, refactoring, complexity reduction
+- **Prerequisites:** Code with suspected duplication or over-engineering
+- **Scope:** Function/class level; for system-wide duplication use with `coding-refactoring-patterns`
+
 ## Prompt
 
 ```text
@@ -67,3 +75,10 @@ Then provide the fully refactored code with inline comments explaining each chan
 
 - For architecture-level analysis: "Analyze this microservice for cross-service code duplication."
 - Add: "Estimate the maintenance cost reduction (%) from applying these changes."
+
+## Composition
+
+- **Precedes:** `coding-refactoring-patterns`
+- **Follows:** `coding-clean-code-principles`
+- **Combines with:** `coding-clean-code-principles`, `coding-solid-principles`, `review-checklist`
+- **Overlay:** Technology overlays available in `overlays/`

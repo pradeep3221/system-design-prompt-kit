@@ -11,6 +11,9 @@ Predefined sequences of prompts for common engineering workflows. Each workflow 
 | [Greenfield Project](greenfield-project.md) | Start a new project from scratch with all foundations | 10 | 4-8 hours |
 | [Code Review](code-review.md) | Comprehensive code review from PR to architecture | 5 | 1-2 hours |
 | [Security Audit](security-audit.md) | Security-focused review and hardening | 6 | 2-4 hours |
+| [Database Change](database-change.md) | Schema design through migration and deployment | 6 | 2-4 hours |
+| [Migration](migration.md) | Legacy modernization using Strangler Fig pattern | 8 | Multi-sprint |
+| [Frontend Development](frontend-development.md) | Frontend app from architecture to deployment | 8 | 2-6 hours |
 
 ## How to Use Workflows
 

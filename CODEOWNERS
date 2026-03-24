@@ -1,0 +1,19 @@
+# Default owners for everything
+* @nicholasxjy
+
+# Prompt content
+/prompts/ @nicholasxjy
+/overlays/ @nicholasxjy
+/workflows/ @nicholasxjy
+/templates/ @nicholasxjy
+
+# Agent configurations
+/agents/ @nicholasxjy
+/.github/ @nicholasxjy
+
+# Scripts and tooling
+/scripts/ @nicholasxjy
+
+# Domain-specific content
+/domains/ @nicholasxjy
+/org-standards/ @nicholasxjy

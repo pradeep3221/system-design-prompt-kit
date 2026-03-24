@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `devops-cicd`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when containerizing applications with Docker/Podman.
+
+- **Use case:** Dockerizing services, optimizing images, Kubernetes manifests, multi-stage builds.
+- **Prerequisites:** Application runtime, dependencies, deployment target (Docker Compose, K8s, ECS).
+- **Scope:** Dockerfile, compose files, image optimization, security scanning, orchestration config.
+
 ## Prompt
 
 ```text
@@ -90,3 +98,10 @@ Complete `docker-compose.yml` for local development:
 
 - For multi-service: "Generate a docker-compose.yml for the entire microservices stack."
 - Add: "Include a Skaffold or Tilt configuration for local Kubernetes development."
+
+## Composition
+
+- **Precedes:** `devops-cicd-pipeline`
+- **Follows:** `arch-microservices-design`
+- **Combines with:** `devops-infrastructure-as-code`
+- **Overlay:** `overlays/{tech}/devops-containerization.overlay.md`

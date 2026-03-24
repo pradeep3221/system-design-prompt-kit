@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `security`
 - **Complexity:** `advanced`
 
+## Context
+
+Use this prompt when performing a security review against OWASP Top 10.
+
+- **Use case:** Pre-launch security audit, compliance review, post-incident remediation.
+- **Prerequisites:** Application codebase, architecture diagram, deployment configuration.
+- **Scope:** All OWASP Top 10 categories with findings, severity, and remediation guidance.
+
 ## Prompt
 
 ```text
@@ -111,3 +119,10 @@ You are a senior application security engineer. Perform an OWASP Top 10 (2021) s
 
 - Add: "Generate OWASP ZAP scan configuration for automated testing."
 - For compliance: "Map findings to SOC 2 / GDPR / HIPAA controls."
+
+## Composition
+
+- **Precedes:** `security-authentication`, `security-input-validation`
+- **Follows:** `system-high-level-design`
+- **Combines with:** `api-rest-security`
+- **Overlay:** `overlays/{tech}/security-owasp.overlay.md`

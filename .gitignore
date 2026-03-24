@@ -1,0 +1,13 @@
+# Generated files
+prompt-index.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+*.swp
+
+# Node (if running scripts)
+node_modules/

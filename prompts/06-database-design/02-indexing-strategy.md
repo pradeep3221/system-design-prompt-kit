@@ -17,6 +17,14 @@ overlay-compatible: true
 - **Category:** `database-design`
 - **Complexity:** `intermediate`
 
+## Context
+
+Use this prompt when optimizing database query performance through indexing.
+
+- **Use case:** Slow query investigation, schema optimization, query-driven index design.
+- **Prerequisites:** Schema design, top query patterns, read/write ratio.
+- **Scope:** Index types, composite indexes, covering indexes, partial indexes, maintenance.
+
 ## Prompt
 
 ```text
@@ -83,3 +91,10 @@ For each critical query:
 
 - For full-text search: "Include GIN/GiST index design for text search columns."
 - Add: "Generate EXPLAIN ANALYZE examples for before/after comparison."
+
+## Composition
+
+- **Precedes:** `db-query-optimization`
+- **Follows:** `db-schema-design`
+- **Combines with:** `perf-performance-profiling`
+- **Overlay:** `overlays/{tech}/db-indexing.overlay.md`
