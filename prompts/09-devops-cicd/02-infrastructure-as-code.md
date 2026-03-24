@@ -1,12 +1,21 @@
+---
+id: "devops-infrastructure-as-code"
+version: "1.0.0"
+category: "devops-cicd"
+complexity: "advanced"
+tags: ["iac", "terraform", "bicep", "cloudformation", "infrastructure"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Infrastructure as Code
 
 > Design and implement infrastructure using Terraform, Bicep, or CloudFormation.
 
-## Category
-`devops-cicd`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `devops-cicd`
+- **Complexity:** `advanced`
 
 ## Prompt
 

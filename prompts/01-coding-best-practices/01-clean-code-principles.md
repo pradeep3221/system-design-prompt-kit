@@ -1,12 +1,21 @@
+---
+id: "coding-clean-code-principles"
+version: "1.0.0"
+category: "coding-best-practices"
+complexity: "basic"
+tags: ["clean-code", "readability", "maintainability", "code-quality"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Clean Code Principles
 
 > Generate a comprehensive clean code review and improvement plan for a given codebase or code snippet.
 
-## Category
-`coding-best-practices`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `coding-best-practices`
+- **Complexity:** `basic`
 
 ## Prompt
 

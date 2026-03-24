@@ -1,12 +1,21 @@
+---
+id: "db-schema-design"
+version: "1.0.0"
+category: "database-design"
+complexity: "intermediate"
+tags: ["database", "schema", "erd", "normalization", "ddl"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Schema Design
 
 > Design a database schema from business requirements with proper normalization and relationships.
 
-## Category
-`database-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `database-design`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "db-migration-planning"
+version: "1.0.0"
+category: "database-design"
+complexity: "advanced"
+tags: ["database", "migration", "zero-downtime", "schema-evolution"]
+depends-on: ["db-schema-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Migration Planning
 
 > Plan zero-downtime database migrations for production systems.
 
-## Category
-`database-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `database-design`
+- **Complexity:** `advanced`
 
 ## Prompt
 

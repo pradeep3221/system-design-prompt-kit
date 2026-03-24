@@ -1,12 +1,21 @@
+---
+id: "devops-monitoring-observability"
+version: "1.0.0"
+category: "devops-cicd"
+complexity: "advanced"
+tags: ["monitoring", "observability", "logging", "metrics", "tracing", "opentelemetry"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Monitoring & Observability
 
 > Design a comprehensive observability stack with logging, metrics, tracing, and alerting.
 
-## Category
-`devops-cicd`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `devops-cicd`
+- **Complexity:** `advanced`
 
 ## Prompt
 

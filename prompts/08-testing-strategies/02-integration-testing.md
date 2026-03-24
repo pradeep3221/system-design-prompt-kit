@@ -1,12 +1,21 @@
+---
+id: "testing-integration"
+version: "1.0.0"
+category: "testing-strategies"
+complexity: "intermediate"
+tags: ["integration-testing", "database-testing", "api-testing", "docker"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Integration Testing
 
 > Test component interactions, database operations, and external service integrations.
 
-## Category
-`testing-strategies`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `testing-strategies`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "naming-api-url"
+version: "1.0.0"
+category: "naming-conventions"
+complexity: "intermediate"
+tags: ["naming", "api", "rest", "urls", "endpoints"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # API & URL Naming Conventions
 
 > Establish consistent naming patterns for REST API endpoints, query parameters, headers, and payloads.
 
-## Category
-`naming-conventions`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `naming-conventions`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

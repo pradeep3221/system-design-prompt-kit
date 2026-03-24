@@ -1,12 +1,21 @@
+---
+id: "db-indexing-strategy"
+version: "1.0.0"
+category: "database-design"
+complexity: "intermediate"
+tags: ["database", "indexing", "performance", "query-optimization"]
+depends-on: ["db-schema-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Indexing Strategy
 
 > Design an optimal indexing strategy based on query patterns and performance requirements.
 
-## Category
-`database-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `database-design`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

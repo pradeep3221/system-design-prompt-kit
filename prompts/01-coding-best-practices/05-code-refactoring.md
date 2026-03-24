@@ -1,12 +1,21 @@
+---
+id: "coding-refactoring-patterns"
+version: "1.0.0"
+category: "coding-best-practices"
+complexity: "advanced"
+tags: ["refactoring", "code-smells", "design-patterns", "tdd"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Code Refactoring Patterns
 
 > Identify code smells and apply systematic refactoring techniques to improve design.
 
-## Category
-`coding-best-practices`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `coding-best-practices`
+- **Complexity:** `advanced`
 
 ## Prompt
 

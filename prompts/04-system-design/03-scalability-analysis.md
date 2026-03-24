@@ -1,12 +1,21 @@
+---
+id: "system-scalability-analysis"
+version: "1.0.0"
+category: "system-design"
+complexity: "advanced"
+tags: ["scalability", "bottlenecks", "horizontal-scaling", "caching"]
+depends-on: ["system-high-level-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Scalability Analysis
 
 > Identify bottlenecks and design strategies to scale a system horizontally and vertically.
 
-## Category
-`system-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `system-design`
+- **Complexity:** `advanced`
 
 ## Prompt
 

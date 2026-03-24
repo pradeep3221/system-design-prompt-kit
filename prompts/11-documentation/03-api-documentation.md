@@ -1,12 +1,21 @@
+---
+id: "docs-api"
+version: "1.0.0"
+category: "documentation"
+complexity: "basic"
+tags: ["api-docs", "openapi", "swagger", "documentation"]
+depends-on: ["api-rest-endpoint-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # API Documentation
 
 > Generate comprehensive API reference documentation from endpoints or OpenAPI specs.
 
-## Category
-`documentation`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `documentation`
+- **Complexity:** `basic`
 
 ## Prompt
 

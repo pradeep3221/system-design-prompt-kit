@@ -1,12 +1,21 @@
+---
+id: "system-capacity-planning"
+version: "1.0.0"
+category: "system-design"
+complexity: "advanced"
+tags: ["capacity", "estimation", "storage", "bandwidth", "cost"]
+depends-on: ["system-high-level-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Capacity Planning
 
 > Estimate compute, storage, bandwidth, and infrastructure needs from requirements.
 
-## Category
-`system-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `system-design`
+- **Complexity:** `advanced`
 
 ## Prompt
 

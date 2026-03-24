@@ -1,12 +1,21 @@
+---
+id: "testing-tdd-workflow"
+version: "1.0.0"
+category: "testing-strategies"
+complexity: "intermediate"
+tags: ["tdd", "red-green-refactor", "bdd", "test-first"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # TDD Workflow
 
 > Apply Test-Driven Development to build a feature with confidence from the start.
 
-## Category
-`testing-strategies`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `testing-strategies`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

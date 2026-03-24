@@ -1,12 +1,21 @@
+---
+id: "naming-language-specific"
+version: "1.0.0"
+category: "naming-conventions"
+complexity: "intermediate"
+tags: ["naming", "python", "typescript", "csharp", "go", "language-idioms"]
+depends-on: ["naming-general-guide"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Language-Specific Naming Conventions
 
 > Generate or review naming conventions aligned with a language's ecosystem and community standards.
 
-## Category
-`naming-conventions`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `naming-conventions`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

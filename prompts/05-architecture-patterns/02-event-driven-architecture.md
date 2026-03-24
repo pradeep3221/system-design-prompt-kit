@@ -1,12 +1,21 @@
+---
+id: "arch-event-driven"
+version: "1.0.0"
+category: "architecture-patterns"
+complexity: "advanced"
+tags: ["event-driven", "event-sourcing", "pub-sub", "messaging"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Event-Driven Architecture
 
 > Design event sourcing, pub/sub, and event-driven systems with reliable message delivery.
 
-## Category
-`architecture-patterns`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `architecture-patterns`
+- **Complexity:** `advanced`
 
 ## Prompt
 

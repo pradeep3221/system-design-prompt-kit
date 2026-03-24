@@ -1,12 +1,21 @@
+---
+id: "system-low-level-design"
+version: "1.0.0"
+category: "system-design"
+complexity: "advanced"
+tags: ["lld", "class-diagram", "data-model", "api-contracts"]
+depends-on: ["system-high-level-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Low-Level Design (LLD)
 
 > Create detailed component-level design with class diagrams, data models, and API contracts.
 
-## Category
-`system-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `system-design`
+- **Complexity:** `advanced`
 
 ## Prompt
 

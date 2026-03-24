@@ -1,12 +1,21 @@
+---
+id: "coding-error-handling"
+version: "1.0.0"
+category: "coding-best-practices"
+complexity: "intermediate"
+tags: ["error-handling", "exceptions", "resilience", "logging"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Error Handling Best Practices
 
 > Design and review robust error handling strategies for production-grade applications.
 
-## Category
-`coding-best-practices`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `coding-best-practices`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

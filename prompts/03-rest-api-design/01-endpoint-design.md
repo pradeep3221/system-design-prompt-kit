@@ -1,12 +1,21 @@
+---
+id: "api-rest-endpoint-design"
+version: "1.0.0"
+category: "api-design/rest"
+complexity: "intermediate"
+tags: ["rest", "api", "crud", "endpoints", "openapi"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Endpoint Design
 
 > Design a complete, RESTful API endpoint set for any resource following REST conventions.
 
-## Category
-`rest-api-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `api-design/rest`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "testing-unit"
+version: "1.0.0"
+category: "testing-strategies"
+complexity: "basic"
+tags: ["unit-testing", "aaa-pattern", "mocking", "coverage"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Unit Testing Guide
 
 > Write effective, isolated unit tests following best practices and the AAA pattern.
 
-## Category
-`testing-strategies`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `testing-strategies`
+- **Complexity:** `basic`
 
 ## Prompt
 

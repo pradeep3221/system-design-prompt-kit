@@ -1,12 +1,21 @@
+---
+id: "security-owasp-top-10"
+version: "1.0.0"
+category: "security"
+complexity: "advanced"
+tags: ["owasp", "security-audit", "vulnerabilities", "compliance"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # OWASP Top 10 Review
 
 > Audit application code and architecture against the OWASP Top 10 security risks.
 
-## Category
-`security`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `security`
+- **Complexity:** `advanced`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "docs-rfc"
+version: "1.0.0"
+category: "documentation"
+complexity: "intermediate"
+tags: ["rfc", "proposal", "design-doc", "documentation"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: false
+---
+
 # RFC / Design Proposal
 
 > Write a Request for Comments (RFC) to propose and discuss significant technical changes.
 
-## Category
-`documentation`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `documentation`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

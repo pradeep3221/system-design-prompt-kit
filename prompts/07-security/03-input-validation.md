@@ -1,12 +1,21 @@
+---
+id: "security-input-validation"
+version: "1.0.0"
+category: "security"
+complexity: "intermediate"
+tags: ["input-validation", "sanitization", "injection", "xss"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Input Validation
 
 > Design comprehensive input validation and sanitization strategies to prevent injection attacks.
 
-## Category
-`security`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `security`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

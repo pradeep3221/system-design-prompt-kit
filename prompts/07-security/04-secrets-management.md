@@ -1,12 +1,21 @@
+---
+id: "security-secrets-management"
+version: "1.0.0"
+category: "security"
+complexity: "intermediate"
+tags: ["secrets", "vault", "key-management", "rotation"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Secrets Management
 
 > Design a secure strategy for managing API keys, credentials, certificates, and sensitive configuration.
 
-## Category
-`security`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `security`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

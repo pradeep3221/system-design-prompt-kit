@@ -1,12 +1,21 @@
+---
+id: "docs-runbook"
+version: "1.0.0"
+category: "documentation"
+complexity: "intermediate"
+tags: ["runbook", "incident-response", "operations", "playbook"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: false
+---
+
 # Runbook / Playbook
 
 > Create operational runbooks for incident response and common operational tasks.
 
-## Category
-`documentation`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `documentation`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

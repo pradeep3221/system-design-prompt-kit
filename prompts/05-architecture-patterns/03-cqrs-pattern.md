@@ -1,12 +1,21 @@
+---
+id: "arch-cqrs-pattern"
+version: "1.0.0"
+category: "architecture-patterns"
+complexity: "advanced"
+tags: ["cqrs", "event-sourcing", "read-model", "write-model"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # CQRS Pattern
 
 > Design a Command Query Responsibility Segregation architecture with separate read and write models.
 
-## Category
-`architecture-patterns`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `architecture-patterns`
+- **Complexity:** `advanced`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "system-high-level-design"
+version: "1.0.0"
+category: "system-design"
+complexity: "advanced"
+tags: ["hld", "architecture", "components", "infrastructure"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # High-Level Design (HLD)
 
 > Produce a comprehensive high-level system architecture from product requirements.
 
-## Category
-`system-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `system-design`
+- **Complexity:** `advanced`
 
 ## Prompt
 

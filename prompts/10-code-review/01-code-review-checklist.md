@@ -1,12 +1,21 @@
+---
+id: "review-checklist"
+version: "1.0.0"
+category: "code-review"
+complexity: "basic"
+tags: ["code-review", "checklist", "quality-gate", "pull-request"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Code Review Checklist
 
 > Apply a comprehensive checklist to systematically review any pull request.
 
-## Category
-`code-review`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `code-review`
+- **Complexity:** `basic`
 
 ## Prompt
 

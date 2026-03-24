@@ -1,12 +1,21 @@
+---
+id: "devops-containerization"
+version: "1.0.0"
+category: "devops-cicd"
+complexity: "intermediate"
+tags: ["docker", "containers", "kubernetes", "security"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Containerization Strategy
 
 > Dockerize applications following security and performance best practices.
 
-## Category
-`devops-cicd`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `devops-cicd`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

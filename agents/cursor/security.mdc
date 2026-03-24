@@ -1,0 +1,39 @@
+---
+description: Enforce security best practices from the prompt library
+globs: **/auth/**,**/security/**,**/middleware/**,**/controllers/**
+alwaysApply: false
+---
+
+# Security Standards
+
+Apply the following security patterns from the system-design-prompt-kit:
+
+## OWASP Top 10 Awareness
+- A01: Broken Access Control — enforce authorization on every endpoint
+- A02: Cryptographic Failures — use strong algorithms, never roll your own crypto
+- A03: Injection — parameterize all queries, sanitize all output
+- A07: Authentication Failures — use proven libraries, enforce MFA where possible
+
+## Input Validation
+- Validate type, length, range, and format on all user inputs
+- Use allowlists over denylists
+- Validate on the server side even if client-side validation exists
+- Sanitize output to prevent XSS (context-aware encoding)
+
+## Authentication
+- Use OAuth 2.0 / OpenID Connect for token-based auth
+- Store passwords with bcrypt/scrypt/argon2 (never MD5/SHA1)
+- Implement token refresh with short-lived access tokens (15 min)
+- Use secure, HttpOnly, SameSite cookies for session tokens
+
+## Secrets Management
+- Never commit secrets to version control
+- Use environment variables or a vault (HashiCorp Vault, Azure Key Vault, AWS Secrets Manager)
+- Rotate secrets on a schedule
+- Use separate secrets per environment
+
+## References
+- `prompts/07-security/01-owasp-top-10-review.md`
+- `prompts/07-security/02-authentication-design.md`
+- `prompts/07-security/03-input-validation.md`
+- `prompts/07-security/04-secrets-management.md`

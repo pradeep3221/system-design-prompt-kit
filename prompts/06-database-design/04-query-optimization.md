@@ -1,12 +1,21 @@
+---
+id: "db-query-optimization"
+version: "1.0.0"
+category: "database-design"
+complexity: "intermediate"
+tags: ["database", "query", "performance", "execution-plan"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Query Optimization
 
 > Analyze slow queries and provide optimization recommendations with execution plan analysis.
 
-## Category
-`database-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `database-design`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

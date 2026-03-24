@@ -1,12 +1,21 @@
+---
+id: "review-architecture"
+version: "1.0.0"
+category: "code-review"
+complexity: "advanced"
+tags: ["architecture-review", "rfc", "design-review", "fitness-functions"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Architecture Review
 
 > Review architectural decisions, system design PRs, and technical RFCs.
 
-## Category
-`code-review`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `code-review`
+- **Complexity:** `advanced`
 
 ## Prompt
 

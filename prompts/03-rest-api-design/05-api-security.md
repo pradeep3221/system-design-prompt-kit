@@ -1,12 +1,21 @@
+---
+id: "api-rest-security"
+version: "1.0.0"
+category: "api-design/rest"
+complexity: "advanced"
+tags: ["rest", "api", "security", "authentication", "rate-limiting"]
+depends-on: ["api-rest-endpoint-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # API Security Checklist
 
 > Comprehensive security review and hardening guide for REST APIs.
 
-## Category
-`rest-api-design`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `api-design/rest`
+- **Complexity:** `advanced`
 
 ## Prompt
 

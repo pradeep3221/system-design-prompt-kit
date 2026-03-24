@@ -1,12 +1,21 @@
+---
+id: "testing-e2e"
+version: "1.0.0"
+category: "testing-strategies"
+complexity: "intermediate"
+tags: ["e2e-testing", "playwright", "cypress", "user-journeys"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # E2E Testing Strategy
 
 > Design end-to-end test suites covering complete user journeys.
 
-## Category
-`testing-strategies`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `testing-strategies`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

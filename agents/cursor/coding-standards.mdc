@@ -1,0 +1,43 @@
+---
+description: Enforce clean code principles and naming conventions from the prompt library
+globs: **/*.{ts,js,py,cs,java,go}
+alwaysApply: true
+---
+
+# Coding Standards
+
+Apply the following standards from the system-design-prompt-kit:
+
+## Clean Code
+- Functions should do one thing (Single Responsibility)
+- Keep functions under 20 lines where possible
+- Use meaningful, descriptive names
+- Avoid magic numbers — use named constants
+- Prefer composition over inheritance
+
+## SOLID Principles
+- **S** — Single Responsibility: each class/module has one reason to change
+- **O** — Open/Closed: extend behavior without modifying existing code
+- **L** — Liskov Substitution: subtypes must be substitutable for base types
+- **I** — Interface Segregation: prefer small, focused interfaces
+- **D** — Dependency Inversion: depend on abstractions, not concretions
+
+## Naming Conventions
+- Use `camelCase` for variables and functions (JS/TS), `snake_case` for Python
+- Use `PascalCase` for classes, interfaces, and types
+- Boolean variables: prefix with `is`, `has`, `can`, `should`
+- Collections: use plural nouns (`users`, `orders`)
+- Avoid abbreviations unless universally understood (`id`, `url`, `api`)
+
+## Error Handling
+- Never swallow exceptions silently
+- Use specific exception types, not generic `Error`/`Exception`
+- Include context in error messages
+- Validate at system boundaries (user input, external APIs)
+- Use Result/Either patterns for expected failures
+
+## References
+- `prompts/01-coding-best-practices/01-clean-code-principles.md`
+- `prompts/01-coding-best-practices/02-solid-principles.md`
+- `prompts/01-coding-best-practices/04-error-handling.md`
+- `prompts/02-naming-conventions/01-general-naming-guide.md`

@@ -1,12 +1,21 @@
+---
+id: "api-rest-pagination-filtering"
+version: "1.0.0"
+category: "api-design/rest"
+complexity: "intermediate"
+tags: ["rest", "api", "pagination", "filtering", "sorting"]
+depends-on: ["api-rest-endpoint-design"]
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Pagination & Filtering
 
 > Design robust pagination, sorting, and filtering for API collection endpoints.
 
-## Category
-`rest-api-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `api-design/rest`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

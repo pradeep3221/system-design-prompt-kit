@@ -1,12 +1,21 @@
+---
+id: "api-rest-versioning"
+version: "1.0.0"
+category: "api-design/rest"
+complexity: "intermediate"
+tags: ["rest", "api", "versioning", "backward-compatibility"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # API Versioning Strategy
 
 > Choose and implement the right API versioning approach for long-term maintainability.
 
-## Category
-`rest-api-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `api-design/rest`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

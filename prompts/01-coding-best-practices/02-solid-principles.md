@@ -1,12 +1,21 @@
+---
+id: "coding-solid-principles"
+version: "1.0.0"
+category: "coding-best-practices"
+complexity: "intermediate"
+tags: ["solid", "oop", "design-principles", "code-quality"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # SOLID Principles
 
 > Analyze or design code following the five SOLID object-oriented design principles.
 
-## Category
-`coding-best-practices`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `coding-best-practices`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

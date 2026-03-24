@@ -1,12 +1,21 @@
+---
+id: "system-trade-off-analysis"
+version: "1.0.0"
+category: "system-design"
+complexity: "intermediate"
+tags: ["trade-offs", "cap-theorem", "quality-attributes", "decisions"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Trade-Off Analysis
 
 > Systematically evaluate architectural decisions using structured trade-off frameworks.
 
-## Category
-`system-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `system-design`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

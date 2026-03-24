@@ -1,12 +1,21 @@
+---
+id: "naming-file-folder"
+version: "1.0.0"
+category: "naming-conventions"
+complexity: "basic"
+tags: ["naming", "files", "folders", "project-structure"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # File & Folder Naming Conventions
 
 > Standardize project structure, file names, and folder organization patterns.
 
-## Category
-`naming-conventions`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `naming-conventions`
+- **Complexity:** `basic`
 
 ## Prompt
 

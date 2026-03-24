@@ -1,12 +1,21 @@
+---
+id: "security-authentication-design"
+version: "1.0.0"
+category: "security"
+complexity: "advanced"
+tags: ["authentication", "oauth", "oidc", "jwt", "mfa"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Authentication Design
 
 > Design secure authentication and authorization flows for modern applications.
 
-## Category
-`security`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `security`
+- **Complexity:** `advanced`
 
 ## Prompt
 

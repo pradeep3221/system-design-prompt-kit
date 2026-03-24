@@ -1,12 +1,21 @@
+---
+id: "api-rest-error-response"
+version: "1.0.0"
+category: "api-design/rest"
+complexity: "intermediate"
+tags: ["rest", "api", "errors", "http-status", "rfc7807"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Error Response Design
 
 > Standardize API error response formats, error codes, and HTTP status code usage.
 
-## Category
-`rest-api-design`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `api-design/rest`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

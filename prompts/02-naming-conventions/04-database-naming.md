@@ -1,12 +1,21 @@
+---
+id: "naming-database"
+version: "1.0.0"
+category: "naming-conventions"
+complexity: "intermediate"
+tags: ["naming", "database", "sql", "schema", "tables"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Database Naming Conventions
 
 > Standardize naming for tables, columns, indexes, constraints, and stored procedures.
 
-## Category
-`naming-conventions`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `naming-conventions`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

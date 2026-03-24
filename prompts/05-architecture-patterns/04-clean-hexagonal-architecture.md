@@ -1,12 +1,21 @@
+---
+id: "arch-clean-hexagonal"
+version: "1.0.0"
+category: "architecture-patterns"
+complexity: "intermediate"
+tags: ["clean-architecture", "hexagonal", "ports-adapters", "dependency-inversion"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Clean / Hexagonal Architecture
 
 > Design applications using ports and adapters with strict dependency inversion.
 
-## Category
-`architecture-patterns`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `architecture-patterns`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

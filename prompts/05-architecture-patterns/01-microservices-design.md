@@ -1,12 +1,21 @@
+---
+id: "arch-microservices-design"
+version: "1.0.0"
+category: "architecture-patterns"
+complexity: "advanced"
+tags: ["microservices", "ddd", "bounded-context", "decomposition"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # Microservices Design
 
 > Decompose a monolith or greenfield system into well-bounded microservices.
 
-## Category
-`architecture-patterns`
-
-## Complexity
-`advanced`
+## Metadata
+- **Category:** `architecture-patterns`
+- **Complexity:** `advanced`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "coding-dry-kiss"
+version: "1.0.0"
+category: "coding-best-practices"
+complexity: "basic"
+tags: ["dry", "kiss", "simplification", "duplication"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # DRY and KISS Principles
 
 > Identify duplication and unnecessary complexity, then simplify and consolidate.
 
-## Category
-`coding-best-practices`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `coding-best-practices`
+- **Complexity:** `basic`
 
 ## Prompt
 

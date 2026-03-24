@@ -1,12 +1,21 @@
+---
+id: "docs-adr"
+version: "1.0.0"
+category: "documentation"
+complexity: "intermediate"
+tags: ["adr", "architecture-decision", "documentation", "governance"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: false
+---
+
 # Architecture Decision Record (ADR)
 
 > Document an architectural decision with full context, options, and consequences.
 
-## Category
-`documentation`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `documentation`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

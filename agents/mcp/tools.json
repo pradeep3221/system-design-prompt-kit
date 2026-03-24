@@ -1,0 +1,117 @@
+{
+  "name": "system-design-prompt-kit",
+  "description": "MCP tool definitions for the System Design Prompt Kit. Each tool maps to a prompt or workflow in the library.",
+  "tools": [
+    {
+      "name": "design_api",
+      "description": "Design RESTful API endpoints following best practices for naming, error handling, versioning, and pagination.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "resource": {
+            "type": "string",
+            "description": "The primary resource name (e.g., 'users', 'orders')"
+          },
+          "operations": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "CRUD operations needed (e.g., ['create', 'read', 'update', 'delete', 'list'])"
+          },
+          "technology": {
+            "type": "string",
+            "description": "Target technology stack for overlay (e.g., 'dotnet', 'node', 'python')"
+          }
+        },
+        "required": ["resource", "operations"]
+      },
+      "prompts": ["api-rest-endpoint-design", "api-rest-error-response-design", "api-rest-versioning", "api-rest-pagination-filtering"]
+    },
+    {
+      "name": "design_system",
+      "description": "Perform high-level system design including component diagrams, data flow, and technology selection.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "system_name": {
+            "type": "string",
+            "description": "Name of the system to design"
+          },
+          "requirements": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "List of functional requirements"
+          },
+          "nfrs": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Non-functional requirements (e.g., '99.9% uptime', '<200ms P99 latency')"
+          }
+        },
+        "required": ["system_name", "requirements"]
+      },
+      "prompts": ["system-high-level-design", "system-low-level-design"]
+    },
+    {
+      "name": "review_security",
+      "description": "Perform a security audit covering OWASP Top 10, authentication, input validation, and secrets management.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "scope": {
+            "type": "string",
+            "description": "Scope of the security review (e.g., 'full application', 'auth module', 'API layer')"
+          },
+          "compliance": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Compliance frameworks to check against (e.g., ['SOC2', 'GDPR', 'HIPAA'])"
+          }
+        },
+        "required": ["scope"]
+      },
+      "prompts": ["security-owasp-top-10-review", "security-authentication-design", "security-input-validation", "security-secrets-management"],
+      "workflow": "security-audit"
+    },
+    {
+      "name": "design_database",
+      "description": "Design database schema with indexing strategy, migration plan, and query optimization.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "entities": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "List of entity names to model"
+          },
+          "database_type": {
+            "type": "string",
+            "description": "Database engine (e.g., 'postgresql', 'mysql', 'mongodb', 'sqlserver')"
+          }
+        },
+        "required": ["entities"]
+      },
+      "prompts": ["db-schema-design", "db-indexing-strategy", "db-migration-planning", "db-query-optimization"]
+    },
+    {
+      "name": "review_code",
+      "description": "Perform structured code review following clean code principles, security checks, and architecture review.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "List of file paths to review"
+          },
+          "focus": {
+            "type": "string",
+            "description": "Review focus area (e.g., 'security', 'performance', 'architecture', 'all')"
+          }
+        },
+        "required": ["files"]
+      },
+      "prompts": ["review-code-review-checklist", "review-pr-feedback-generator", "review-architecture-review"],
+      "workflow": "code-review"
+    }
+  ]
+}

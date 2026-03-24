@@ -1,12 +1,21 @@
+---
+id: "naming-general-guide"
+version: "1.0.0"
+category: "naming-conventions"
+complexity: "basic"
+tags: ["naming", "readability", "conventions", "variables"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # General Naming Guide
 
 > Establish consistent, self-documenting naming conventions for any codebase.
 
-## Category
-`naming-conventions`
-
-## Complexity
-`basic`
+## Metadata
+- **Category:** `naming-conventions`
+- **Complexity:** `basic`
 
 ## Prompt
 

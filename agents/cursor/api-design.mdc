@@ -1,0 +1,53 @@
+---
+description: Enforce REST API design standards from the prompt library
+globs: **/controllers/**,**/routes/**,**/endpoints/**,**/api/**
+alwaysApply: false
+---
+
+# API Design Standards
+
+Apply the following API design patterns from the system-design-prompt-kit:
+
+## Endpoint Design
+- Use plural nouns for resources: `/users`, `/orders`
+- Use HTTP methods correctly: GET (read), POST (create), PUT (full update), PATCH (partial), DELETE (remove)
+- Nest sub-resources: `/users/{id}/orders`
+- Maximum 3 levels of nesting
+- Use query parameters for filtering: `?status=active&sort=-created_at`
+
+## Error Responses (RFC 7807)
+```json
+{
+  "type": "https://api.example.com/errors/validation",
+  "title": "Validation Error",
+  "status": 400,
+  "detail": "The 'email' field is not a valid email address.",
+  "instance": "/users/123",
+  "errors": [
+    { "field": "email", "message": "Invalid email format" }
+  ]
+}
+```
+
+## Versioning
+- Use URL path versioning: `/api/v1/users`
+- Support N-1 versions minimum
+- Deprecation headers: `Deprecation: true`, `Sunset: <date>`
+
+## Pagination
+- Use cursor-based pagination for large datasets
+- Include `next`, `prev`, `total` in response metadata
+- Default page size: 20, max: 100
+
+## Security
+- Require authentication on all endpoints except health checks
+- Use rate limiting with `429 Too Many Requests`
+- Validate all input at the controller layer
+- Return minimal error details in production
+
+## References
+- `prompts/03-rest-api-design/01-endpoint-design.md`
+- `prompts/03-rest-api-design/02-error-response-design.md`
+- `prompts/03-rest-api-design/03-api-versioning.md`
+- `prompts/03-rest-api-design/04-pagination-filtering.md`
+- `prompts/03-rest-api-design/05-api-security.md`

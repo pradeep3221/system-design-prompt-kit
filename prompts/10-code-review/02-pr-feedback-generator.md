@@ -1,12 +1,21 @@
+---
+id: "review-pr-feedback"
+version: "1.0.0"
+category: "code-review"
+complexity: "intermediate"
+tags: ["code-review", "feedback", "pull-request", "mentorship"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # PR Feedback Generator
 
 > Generate constructive, actionable pull request review comments.
 
-## Category
-`code-review`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `code-review`
+- **Complexity:** `intermediate`
 
 ## Prompt
 

@@ -1,12 +1,21 @@
+---
+id: "devops-cicd-pipeline"
+version: "1.0.0"
+category: "devops-cicd"
+complexity: "intermediate"
+tags: ["cicd", "pipeline", "github-actions", "deployment"]
+depends-on: []
+tools: ["copilot", "cursor", "cli"]
+overlay-compatible: true
+---
+
 # CI/CD Pipeline Design
 
 > Design comprehensive build, test, and deployment pipelines.
 
-## Category
-`devops-cicd`
-
-## Complexity
-`intermediate`
+## Metadata
+- **Category:** `devops-cicd`
+- **Complexity:** `intermediate`
 
 ## Prompt
 
